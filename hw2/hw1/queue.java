@@ -2,27 +2,18 @@ import java.util.*;
 import loader.TrashCanAb;
 public class queue extends TrashCanAb
 {
-	private int[] arr = new int[10000];
-	private int ptr;
+	private String str;
 	public queue(){
-		ptr=0;
+		str="[";
 	}
 	public void Insert(int garbage) {
-		arr[ptr++]=garbage;
+		str+=garbage+",";
 	}
 	public void Empty() {
-		for(int i=0;i<ptr;++i){
-			arr[i]=0;
-		}
+		str="[]";
 	}
 	public String ToString() {
-		String s="[";
-		String tmp="";
-		for(int i=0;i<ptr;++i){
-			tmp=arr[i]+",";
-			s+=tmp;
-		}
-		int len=s.length()-1;
+		int len=str.length()-1;
 		String ans=s.substring(0, len);
 		ans+="]";
 		return ans;
