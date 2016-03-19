@@ -26,4 +26,7 @@ public class Threesum extends Algorithm3SumFastest
 		}
 		return num_of_threesum;
 	}
+	public static void main(String[] args) {
+		
+	}
 }
