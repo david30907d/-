@@ -1,5 +1,5 @@
 package hw01;
-import java.util.Arrays;
+import java.util.*;
 import loader.Algorithm3SumFastest;
 public class Threesum extends Algorithm3SumFastest
 {	
